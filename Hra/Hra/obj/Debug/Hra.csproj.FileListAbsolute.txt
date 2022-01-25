@@ -9,3 +9,14 @@ G:\Dokumenty\Hra\Hra\obj\Debug\Hra.csproj.CoreCompileInputs.cache
 G:\Dokumenty\Hra\Hra\obj\Debug\Hra.exe
 G:\Dokumenty\Hra\Hra\obj\Debug\Hra.pdb
 G:\Dokumenty\Hra\Hra\obj\Debug\Hra.Form2.resources
+D:\Koj\Programování\GitHub\C#\Hra\Hra\Hra\bin\Debug\Hra.exe.config
+D:\Koj\Programování\GitHub\C#\Hra\Hra\Hra\bin\Debug\Hra.exe
+D:\Koj\Programování\GitHub\C#\Hra\Hra\Hra\bin\Debug\Hra.pdb
+D:\Koj\Programování\GitHub\C#\Hra\Hra\Hra\obj\Debug\Hra.csprojAssemblyReference.cache
+D:\Koj\Programování\GitHub\C#\Hra\Hra\Hra\obj\Debug\Hra.Form1.resources
+D:\Koj\Programování\GitHub\C#\Hra\Hra\Hra\obj\Debug\Hra.Form2.resources
+D:\Koj\Programování\GitHub\C#\Hra\Hra\Hra\obj\Debug\Hra.Properties.Resources.resources
+D:\Koj\Programování\GitHub\C#\Hra\Hra\Hra\obj\Debug\Hra.csproj.GenerateResource.cache
+D:\Koj\Programování\GitHub\C#\Hra\Hra\Hra\obj\Debug\Hra.csproj.CoreCompileInputs.cache
+D:\Koj\Programování\GitHub\C#\Hra\Hra\Hra\obj\Debug\Hra.exe
+D:\Koj\Programování\GitHub\C#\Hra\Hra\Hra\obj\Debug\Hra.pdb
