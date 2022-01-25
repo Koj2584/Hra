@@ -1,0 +1,11 @@
+G:\Dokumenty\Hra\Hra\bin\Debug\Hra.exe.config
+G:\Dokumenty\Hra\Hra\bin\Debug\Hra.exe
+G:\Dokumenty\Hra\Hra\bin\Debug\Hra.pdb
+G:\Dokumenty\Hra\Hra\obj\Debug\Hra.csprojAssemblyReference.cache
+G:\Dokumenty\Hra\Hra\obj\Debug\Hra.Form1.resources
+G:\Dokumenty\Hra\Hra\obj\Debug\Hra.Properties.Resources.resources
+G:\Dokumenty\Hra\Hra\obj\Debug\Hra.csproj.GenerateResource.cache
+G:\Dokumenty\Hra\Hra\obj\Debug\Hra.csproj.CoreCompileInputs.cache
+G:\Dokumenty\Hra\Hra\obj\Debug\Hra.exe
+G:\Dokumenty\Hra\Hra\obj\Debug\Hra.pdb
+G:\Dokumenty\Hra\Hra\obj\Debug\Hra.Form2.resources
