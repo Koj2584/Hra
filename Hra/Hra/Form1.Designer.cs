@@ -30,6 +30,8 @@
         {
             this.components = new System.ComponentModel.Container();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.Hrac = new System.Windows.Forms.Panel();
+            this.label2 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
             this.panel4 = new System.Windows.Forms.Panel();
@@ -40,8 +42,6 @@
             this.panel7 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
-            this.Hrac = new System.Windows.Forms.Panel();
-            this.label2 = new System.Windows.Forms.Label();
             this.panel10 = new System.Windows.Forms.Panel();
             this.button1 = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
@@ -56,6 +56,26 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(200, 200);
             this.panel1.TabIndex = 0;
+            // 
+            // Hrac
+            // 
+            this.Hrac.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
+            this.Hrac.Controls.Add(this.label2);
+            this.Hrac.Location = new System.Drawing.Point(60, 60);
+            this.Hrac.Name = "Hrac";
+            this.Hrac.Size = new System.Drawing.Size(80, 80);
+            this.Hrac.TabIndex = 1;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Bahnschrift Condensed", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label2.ForeColor = System.Drawing.SystemColors.ControlLight;
+            this.label2.Location = new System.Drawing.Point(15, 25);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(50, 29);
+            this.label2.TabIndex = 0;
+            this.label2.Text = "Hráč";
             // 
             // panel2
             // 
@@ -135,29 +155,9 @@
             this.timer1.Interval = 1000;
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
-            // Hrac
-            // 
-            this.Hrac.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
-            this.Hrac.Controls.Add(this.label2);
-            this.Hrac.Location = new System.Drawing.Point(60, 60);
-            this.Hrac.Name = "Hrac";
-            this.Hrac.Size = new System.Drawing.Size(80, 80);
-            this.Hrac.TabIndex = 1;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Bahnschrift Condensed", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label2.ForeColor = System.Drawing.SystemColors.ControlLight;
-            this.label2.Location = new System.Drawing.Point(15, 25);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(50, 29);
-            this.label2.TabIndex = 0;
-            this.label2.Text = "Hráč";
-            // 
             // panel10
             // 
-            this.panel10.Location = new System.Drawing.Point(12, 12);
+            this.panel10.Location = new System.Drawing.Point(13, 12);
             this.panel10.Name = "panel10";
             this.panel10.Size = new System.Drawing.Size(588, 25);
             this.panel10.TabIndex = 10;

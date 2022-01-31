@@ -14,6 +14,7 @@ namespace Hra
     {
         int pozice = 1;
         int cas = 5;
+        bool gameOver = false;
         public Form1()
         {
             InitializeComponent();
@@ -23,67 +24,70 @@ namespace Hra
 
         private void Form1_KeyDown(object sender, KeyEventArgs e)
         {
-            if(e.KeyCode == Keys.D)
+            if (!gameOver)
             {
-                if(pozice!= 3 && pozice != 6 && pozice != 9)
-                    pozice++;
-            }
-            if (e.KeyCode == Keys.A)
-            {
-                if (pozice != 1 && pozice != 4 && pozice != 7)
-                    pozice--;
-            }
-            if (e.KeyCode == Keys.S)
-            {
-                if (pozice < 7)
-                    pozice += 3;
-            }
-            if (e.KeyCode == Keys.W)
-            {
-                if (pozice > 3)
-                    pozice-=3;
-            }
+                if (e.KeyCode == Keys.D)
+                {
+                    if (pozice != 3 && pozice != 6 && pozice != 9)
+                        pozice++;
+                }
+                if (e.KeyCode == Keys.A)
+                {
+                    if (pozice != 1 && pozice != 4 && pozice != 7)
+                        pozice--;
+                }
+                if (e.KeyCode == Keys.S)
+                {
+                    if (pozice < 7)
+                        pozice += 3;
+                }
+                if (e.KeyCode == Keys.W)
+                {
+                    if (pozice > 3)
+                        pozice -= 3;
+                }
 
-            switch(pozice)
-            {
-                case 1:
-                    panel1.Controls.Add(this.Hrac);
-                    Hrac.Location = new Point(60, 60);
-                    break;
-                case 2:
-                    panel2.Controls.Add(this.Hrac);
-                    Hrac.Location = new Point(60, 60);
-                    break;
-                case 3:
-                    panel3.Controls.Add(this.Hrac);
-                    Hrac.Location = new Point(60, 60);
-                    break;
-                case 4:
-                    panel4.Controls.Add(this.Hrac);
-                    Hrac.Location = new Point(60, 60);
-                    break;
-                case 5:
-                    panel5.Controls.Add(this.Hrac);
-                    Hrac.Location = new Point(60, 60);
-                    break;
-                case 6:
-                    panel6.Controls.Add(this.Hrac);
-                    Hrac.Location = new Point(60, 60);
-                    break;
-                case 7:
-                    panel7.Controls.Add(this.Hrac);
-                    Hrac.Location = new Point(60, 60);
-                    break;
-                case 8:
-                    panel8.Controls.Add(this.Hrac);
-                    Hrac.Location = new Point(60, 60);
-                    break;
-                case 9:
-                    panel9.Controls.Add(this.Hrac);
-                    Hrac.Location = new Point(60, 60);
-                    break;
+                switch (pozice)
+                {
+                    case 1:
+                        panel1.Controls.Add(this.Hrac);
+                        Hrac.Location = new Point(60, 60);
+                        break;
+                    case 2:
+                        panel2.Controls.Add(this.Hrac);
+                        Hrac.Location = new Point(60, 60);
+                        break;
+                    case 3:
+                        panel3.Controls.Add(this.Hrac);
+                        Hrac.Location = new Point(60, 60);
+                        break;
+                    case 4:
+                        panel4.Controls.Add(this.Hrac);
+                        Hrac.Location = new Point(60, 60);
+                        break;
+                    case 5:
+                        panel5.Controls.Add(this.Hrac);
+                        Hrac.Location = new Point(60, 60);
+                        break;
+                    case 6:
+                        panel6.Controls.Add(this.Hrac);
+                        Hrac.Location = new Point(60, 60);
+                        break;
+                    case 7:
+                        panel7.Controls.Add(this.Hrac);
+                        Hrac.Location = new Point(60, 60);
+                        break;
+                    case 8:
+                        panel8.Controls.Add(this.Hrac);
+                        Hrac.Location = new Point(60, 60);
+                        break;
+                    case 9:
+                        panel9.Controls.Add(this.Hrac);
+                        Hrac.Location = new Point(60, 60);
+                        break;
+                }
+                this.Text = "Pozice " + pozice;
             }
-            this.Text = "Pozice " + pozice;
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -143,6 +147,7 @@ namespace Hra
             if(rndm == pozice)
             {
                 label1.Text = "Game over";
+                gameOver = true;
             }
             else
             {

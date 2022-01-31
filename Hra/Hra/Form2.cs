@@ -15,50 +15,57 @@ namespace Hra
         public Form2()
         {
             InitializeComponent();
+            vymaz();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        public void vymaz()
         {
-            listBox1.Items.Clear();
+            foreach (object o in this.Controls)
+            {
+                if (o is CheckBox)
+                    ((CheckBox)o).Checked = false;
+                if (o is TextBox)
+                    (o as TextBox).Text = "";
+            }
+        }
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
             try
             {
-                int min = int.Parse(textBox1.Text);
-                int max = int.Parse(textBox2.Text);
-                bool prvocislo;
-
-                while (min <= max)
+                int cislo = int.Parse(textBox1.Text);
+                int whSoucet = 0, foreSoucet = 0, dwhSoucet = 0;
+                if(cislo>0)
                 {
-                    prvocislo = (min == 2 || min % 2 != 0) && min != 1;
-                    for (int i = 3;i<=Math.Sqrt(min)&&prvocislo;i+=2)
+                    while(cislo > 0)
                     {
-                        prvocislo = min % i != 0;
+                        int cifra = cislo % 10;
+                        cislo /= 10;
+                        whSoucet += cifra;
                     }
-                    if(prvocislo)
+
+                    foreach(char x in textBox1.Text)
                     {
-                        listBox1.Items.Add("Číslo " + min + " je prvocislo");
+                        int i = int.Parse(x.ToString());
+                        foreSoucet += i;
                     }
-                    else
+
+                    cislo = int.Parse(textBox1.Text);
+                    do
                     {
-                        //listBox1.Items.Add("Číslo " + min + " není prvocislo");
-                    }
-                    min++;
+                        int cifra = cislo % 10;
+                        cislo /= 10;
+                        dwhSoucet += cifra;
+                    } while (cislo > 0);
+
+                    label1.Text = "Cyklus while " + whSoucet;
+                    label2.Text = "Cyklus foreach " + foreSoucet;
+                    label3.Text = "Cyklus do while " + dwhSoucet;
                 }
             }
             catch
             {
-                MessageBox.Show("Chibaaaa!!");
-            }
-        }
-
-        private void button3_Click(object sender, EventArgs e)
-        {
-            try
-            {
-
-            }
-            catch
-            {
-
+                MessageBox.Show("Chybaaaa!!");
             }
         }
     }
